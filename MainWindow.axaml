@@ -8,7 +8,7 @@
 
     <StackPanel>
         <Border Margin="20" Background="Green" CornerRadius="30">
-            <TextBlock Text="Temp Calculator" 
+            <TextBlock Text="Temperator Calculator" 
                     FontSize="50" 
                     HorizontalAlignment="Center"/>
         </Border>
