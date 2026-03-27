@@ -1,0 +1,30 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="_.MainWindow"
+        Title="_">
+
+    <StackPanel>
+        <Border Margin="20" Background="Green" CornerRadius="30">
+            <TextBlock Text="Temp Calculator" 
+                    FontSize="50" 
+                    HorizontalAlignment="Center"/>
+        </Border>
+        <Grid ShowGridLines="True"
+              Margin="10"
+              ColumnDefinitions="120, 100"
+              RowDefinitions="Auto,Auto">
+            
+            
+            <TextBlock Grid.Row="0" Grid.Column="0" Margin="10">Celsius</TextBlock>
+            <TextBlock Grid.Row="1" Grid.Column="0" Margin="10">Fahrenheit</TextBlock>
+            
+            <TextBox Grid.Row="0" Grid.Column="1" Margin="10" Text="0" Name="Celsius"></TextBox>
+            <TextBox Grid.Row="1" Grid.Column="1" Margin="10" Text="0" Name="Fahrenheit"></TextBox>
+        </Grid>
+
+        <Button Click="Button_Onclick" HorizontalAlignment="Center" CornerRadius="30"> Calculate</Button>
+    </StackPanel>
+</Window>
